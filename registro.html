@@ -9,38 +9,45 @@
     <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 <body>
+
+    <header>
+        <div id="principal">
+         <h2>Registro</h2>
+        </div>
+
+    </header>
     
     <div id="contacto" class="contacto">
-        <h2>Registro</h2>
-        <form class="formulario" action="#" method="POST">
+       
+        <form id="form-registro" class="form-registro" action="#" method="POST">
             
             
                 <div class="contenedor-campos">
                     <div class="campo">
                         <label >Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="campo">
                         <label >Apellido</label>
-                        <input type="text" name="nombre" placeholder="Apellido" required>
+                        <input id="apellido" type="text" name="apellido" required>
                     </div>
                     <div class="campo">
                         <label >Telefo</label>
-                        <input type="tel" name="telefono" placeholder="telefono">
+                        <input id="telefono" type="tel" name="telefono" >
                     </div>
                     <div class="campo w-100">
                         <label >Correo</label>
-                        <input type="email" name="correo" placeholder="correo">
+                        <input id="correo" type="email" name="correo" >
                     </div>
                     <div class="campo w-100">
                         <label >Contrasena</label>
-                        <input type="password" name="correo" placeholder="">
+                        <input id="contraseña" type="password" name="correo" required>
                     </div>
                    
             
 
                     <div class="enviar">
-                        <input class="boton" type="submit" value="Registar">
+                        <input id="boton" type="submit" value="Registrar">
                     </div>
                 </div>
 
