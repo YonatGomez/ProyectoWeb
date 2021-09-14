@@ -2,7 +2,7 @@
     --blanco: #fff;
     --negro: #2121;
     --gris: #757575;
-    --segundario: #009797;
+    --secundario: #009797;
 
 
 }
@@ -12,14 +12,13 @@ html{
 }
 *,*:before, *:after{
     box-sizing: inherit;
-
 }
 body{
     font-size: 16px;
     font-family: "krub",sans-serif ;
 }
 .nav-bg{
-    background-color: var(--segundario);
+    background-color: var(--secundario);
 }
 .nav-principal-contenedor{
 
@@ -58,10 +57,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--blanco);
 
 }
 #btn-registrar,#boton{
-    background-color: var(--segundario) ;
+    background-color: var(--secundario) ;
     color: var(--blanco);
     margin-top: 0.5rem;
     padding: 00.5rem 3rem;
@@ -76,7 +76,7 @@ body{
 header{
     width:100%; /* Establecemos que el header abarque el 100% del documento */
 	overflow:hidden; /* Eliminamos errores de float */
-	background: var(--segundario);
+	background: var(--secundario);
 	margin-bottom:3em;
     display: flex;
   justify-content: center;
