@@ -18,8 +18,15 @@ body{
     font-size: 16px;
     font-family: "krub",sans-serif ;
 }
+/*hearder*/
 .nav-bg{
-    background-color: var(--segundario);
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background: var(--gris);
+  margin-bottom:1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-principal-contenedor{
 
@@ -42,12 +49,28 @@ body{
      
  }
  .nav-principal-contenedor a:hover{
-    background-color: coral;
+    background-color: var(--blanco);
     color:var(--negro);
 }
 .nav-principal-contenedor a :last-of-type{
     margin-bottom: 0%;
 
+}
+#titulo{
+    font-family: "Homer Simpson UI";
+    color: var(--blanco);
+    justify-content:left; 
+    
+}
+.imagen{
+    height: 600px;
+    width: 100%;
+    background-image: url(../IMG/imagen3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    margin-bottom: 2rem;
+  
 }
 .contenido-imagen{
     background-color: rgb(0,0,0,0.7);
@@ -58,8 +81,36 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: none;
 
 }
+/*servicios*/
+#s1{
+    float: left;
+    width: 30%;
+}
+#s2{
+    float: left;
+    width: 30%;
+    align-items: center;
+}
+#s3{
+    align-items: center;
+}
+
+/*footer*/
+
+#final{
+
+     background-color: #757575;
+     color: var(--blanco);
+     height: 47px;
+     text-align: center;
+     padding: 10px;
+     margin-top: 10px;
+}
+
+/*pagina de registro*/
 #btn-registrar,#boton{
     background-color: var(--segundario) ;
     color: var(--blanco);
@@ -72,17 +123,6 @@ body{
     font-size: 1.2rem;
     border: none;
 }
-
-header{
-    width:100%; /* Establecemos que el header abarque el 100% del documento */
-	overflow:hidden; /* Eliminamos errores de float */
-	background: var(--segundario);
-	margin-bottom:3em;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contacto{
     width: 100%;
     max-width: 600px;
