@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preload" href="CSS/estilo.css" as ="style">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="form.js"></script>
 </head>
 <body>
 
@@ -29,25 +29,25 @@
                     </div>
                     <div class="campo">
                         <label >Apellido</label>
-                        <input id="apellido" type="text" name="apellido" required>
+                        <input id="apellido" type="text" name="apellido" placeholder="Apellido" required>
                     </div>
                     <div class="campo">
-                        <label >Telefo</label>
-                        <input id="telefono" type="tel" name="telefono" >
+                        <label >Teléfono</label>
+                        <input id="telefono" type="tel" name="telefono" placeholder="Teléfono">
                     </div>
                     <div class="campo w-100">
                         <label >Correo</label>
-                        <input id="correo" type="email" name="correo" >
+                        <input id="correo" type="email" name="correo" placeholder="e-mail">
                     </div>
                     <div class="campo w-100">
-                        <label >Contrasena</label>
-                        <input id="contraseña" type="password" name="correo" required>
+                        <label >Contraseña</label>
+                        <input id="password" type="password" name="password" placeholder="Contraseña" required>
                     </div>
                    
             
 
                     <div class="enviar">
-                        <input id="boton" type="submit" value="Registrar">
+                        <input id="btn-submit-form" type="submit"  onclick="click_submit()" value="Registrar">
                     </div>
                 </div>
 
